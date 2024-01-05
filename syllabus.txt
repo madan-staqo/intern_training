@@ -1,0 +1,13 @@
+a. Introduction to React JS: Done
+b. Why We Need React Js: Features, SPA, CLS, Data Binding, VDom
+c. React Setup: Done
+d. React structure: Done
+e. Component : Functional/class - Done
+f. Component States: Mount/Unmount/Update/Props - Done
+g. Hooks: useState,useEffect,useRef,useMemo,useReducer,useContext,useCallback,useLayoutEffect,useReducer etc: Calculator
+h. Jsx
+i. ECMAScript version & changes
+j. Dom,Virtual Dom
+k. Redux,Context Api
+l. Routing
+m. Dummy Project: <Task Management> 1. Authentication, Dashboard with Crud with Task
