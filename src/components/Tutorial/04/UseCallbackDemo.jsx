@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useState } from 'react'
 import { Button } from 'react-bootstrap'
 
-export default function GrandParent() {
+export default function   GrandParent() {
   const [count, setCount] = useState(0)
   const [randomNum, setRandomNum] = useState("")
 
@@ -15,7 +15,7 @@ export default function GrandParent() {
       <hr />
       <div style={{ border: "1px solid grey", padding: 10 }}>
         <h6>Hi, This is <b>Grand parent component</b> for checking useCallback.</h6>
-        Current count is  : {count}
+        <b>Current count is</b>  : {count}
         <br />
         <br />
         <Parent randomNum={randomNum} callByParent={callByParent} />
@@ -30,8 +30,8 @@ const Parent = memo(function Parent({ randomNum, callByParent = () => { } }) {
   return (
     <div>
       {console.log("Parent Render")}
-      <h6>Hi, This is parent component for checking useCallback.</h6>
-      Parent Props randomNum : {randomNum}
+      <h6>Hi, This is <b>parent component</b> for checking useCallback.</h6>
+      <b>Parent Props randomNum</b> : {randomNum}
       <br />
       <br />
       <Child />
@@ -43,7 +43,7 @@ const Child = memo(function Child() {
   return (
     <div>
       {console.log("Child Render")}
-      <h6>Hi, This is child component for checking useCallback.</h6>
+      <h6>Hi, This is <b>child component</b> for checking useCallback.</h6>
     </div>
   )
 })
